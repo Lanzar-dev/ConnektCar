@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Audi R8 RWD",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333496/connecktcar/Audi_R8_RWD_taslnx.jpg",
+        "capacity": "2",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Kia Ceed 1.0 T-GDi '2'",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333494/connecktcar/Kia_Ceed_1.0_T-GDi_2_pslllu.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Kia Ceed Sportswagon 1.5 T-GDI '3'",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333494/connecktcar/Kia_Ceed_Sportswagon_1.5_T-GDI_3_zrlwjj.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "BMW i4 eDrive40 M Sport",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333494/connecktcar/BMW_i4_eDrive40_M_Sport_xh2nsy.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Volkswagen Taigo",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333495/connecktcar/Volkswagen_Taigo_rnzkks.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Kia Proceed 1.5 T-GDi GT-Line",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333496/connecktcar/Kia_Proceed_1.5_T-GDi_GT-Line_rcdwlo.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Volkswagen ID 6 X",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333495/connecktcar/Volkswagen_ID_6_X_vlsbdx.jpg",
+        "capacity": "5",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    },
+    {
+        "name": "Honda HR-V",
+        "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333494/connecktcar/Honda_HR-V_wtayvz.jpg",
+        "capacity": "4",
+        "fuelType": "gasoline",
+        "rentPerHour": "50"
+    }
+]
+
