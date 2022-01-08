@@ -4,16 +4,22 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import BookingCar from "./pages/BookingCar";
+import "antd/dist/antd.css";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<ProtectedRoute />}>
+            <Route path="/" element={<Home />} />
+          </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/bookingcar" element={<BookingCar />} />
+          <Route path="/booking/:carId" element={<ProtectedRoute />}>
+            <Route path="/booking/:carId" element={<BookingCar />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
@@ -21,3 +27,14 @@ function App() {
 }
 
 export default App;
+
+//refactor with JWT
+// export const ProtectedRoute = (props) => {
+//   const navigate = useNavigate();
+//   if (localStorage.getItem("user")) {
+//     return <Route {...props} />;
+//   } else {
+//     return navigate("/login");
+//     // return <Login />;
+//   }
+// };

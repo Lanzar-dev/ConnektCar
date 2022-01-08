@@ -18,16 +18,139 @@ code {
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+}
+
 h1 {
   font-family: 30px;
   font-weight: bold;
   color: orangered;
 }
 
+p {
+  margin: 5px !important;
+  /* text-align: left; */
+  padding: 0;
+}
+
 .header {
   padding: 10px;
 }
 
+.header .ant-btn {
+  box-shadow: none;
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+  padding: 5px 15px;
+  outline: none;
+  width: 100px;
+}
+
 .content {
   min-height: 90vh;
+}
+
+/* Home */
+.btn1 {
+  box-shadow: none;
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+  padding: 5px 15px;
+  outline: none;
+}
+
+.car {
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+}
+
+.car:hover {
+  height: 220px;
+}
+
+.car:hover > .car-content {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.carImg {
+  height: 180px;
+  width: auto;
+  border-radius: 5px;
+  transform: translateY(-50px);
+}
+
+.car-content {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Login */
+.login {
+  background-color: black;
+  /* padding-top: 50px; */
+  min-height: 100vh;
+}
+
+.login h1,
+.login label {
+  color: white !important;
+  opacity: 0.6;
+}
+
+.login-form {
+  background-color: #1f1f1f;
+}
+
+.login-form input {
+  background-color: #333333;
+  border: none;
+  color: white;
+  opacity: 0.5;
+}
+
+.login-img {
+  height: 100vh;
+  width: 100%;
+}
+
+.login-logo {
+  position: absolute;
+  left: 60px;
+  right: 0;
+  top: 70%;
+  /* bottom: 50%; */
+  transform: translateY(-50%, -50%);
+  font-size: 45px;
+  opacity: 0.3 !important;
+}
+
+.login a {
+  color: white;
+  opacity: 0.9;
+}
+
+.login a:hover {
+  color: orangered;
+}
+
+.login-register {
+  color: white;
+  opacity: 0.5;
+}
+
+/* BookingCar */
+.carImg2 {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
 }

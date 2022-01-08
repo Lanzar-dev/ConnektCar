@@ -14,7 +14,7 @@
         "rentPerHour": "50"
     },
     {
-        "name": "Kia Ceed Sportswagon 1.5 T-GDI '3'",
+        "name": "Kia Ceed Sportswagon '3'",
         "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333494/connecktcar/Kia_Ceed_Sportswagon_1.5_T-GDI_3_zrlwjj.jpg",
         "capacity": "4",
         "fuelType": "gasoline",
@@ -35,7 +35,7 @@
         "rentPerHour": "50"
     },
     {
-        "name": "Kia Proceed 1.5 T-GDi GT-Line",
+        "name": "Kia Proceed GT-Line",
         "image": "https://res.cloudinary.com/lanzar/image/upload/v1641333496/connecktcar/Kia_Proceed_1.5_T-GDi_GT-Line_rcdwlo.jpg",
         "capacity": "4",
         "fuelType": "gasoline",
