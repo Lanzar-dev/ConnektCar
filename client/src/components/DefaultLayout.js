@@ -8,10 +8,10 @@ export default function DefaultLayout(props) {
   const menu = (
     <Menu>
       <Menu.Item>
-        <a href="https://www.antgroup.com">Home</a>
+        <a href="/">Home</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.antgroup.com">Bookings</a>
+        <a href="/userbookings">Bookings</a>
       </Menu.Item>
       <Menu.Item>
         <a href="https://www.aliyun.com">Profile</a>
@@ -34,12 +34,12 @@ export default function DefaultLayout(props) {
           <Col lg={20} sm={24} xs={24}>
             <div className="d-flex justify-content-between">
               <Link to="/">
-                <h1>ConnecktCar</h1>
+                <h1 style={{ color: "orangered" }}>ConnecktCar</h1>
               </Link>
 
               <Dropdown overlay={menu} placement="bottomCenter">
                 <Button>
-                  Hi!, <strong> {user.username}</strong>
+                  <strong> {user.username}</strong>
                 </Button>
               </Dropdown>
             </div>
