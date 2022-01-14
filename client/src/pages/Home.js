@@ -69,7 +69,7 @@ export default function Home() {
               <div className="car p-2 bs1">
                 <img src={car.image} alt={car.name} className="carImg" />
                 <div className="car-content d-flex align-items-center justify-content-between">
-                  <div>
+                  <div className="text-left pl-2">
                     <p>{car.name}</p>
                     <p>${car.rentPerHour} Rent Per Hour</p>
                   </div>
