@@ -10,6 +10,7 @@ import UserBookings from "./pages/UserBookings";
 import AddCar from "./pages/AddCar";
 import AdminHome from "./pages/AdminHome";
 import EditCar from "./pages/EditCar";
+import AdminRoute from "./components/AdminRoute";
 
 function App() {
   return (
@@ -27,13 +28,13 @@ function App() {
           <Route path="/userbookings" element={<ProtectedRoute />}>
             <Route path="/userbookings" element={<UserBookings />} />
           </Route>
-          <Route path="/addcar" element={<ProtectedRoute />}>
+          <Route path="/addcar" element={<AdminRoute />}>
             <Route path="/addcar" element={<AddCar />} />
           </Route>
-          <Route path="/editcar/:carId" element={<ProtectedRoute />}>
+          <Route path="/editcar/:carId" element={<AdminRoute />}>
             <Route path="/editcar/:carId" element={<EditCar />} />
           </Route>
-          <Route path="/admin" element={<ProtectedRoute />}>
+          <Route path="/admin" element={<AdminRoute />}>
             <Route path="/admin" element={<AdminHome />} />
           </Route>
         </Routes>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Dropdown, Button, Space, Row, Col } from "antd";
+import { Menu, Dropdown, Button, Row, Col } from "antd";
 import { Link } from "react-router-dom";
 
 export default function DefaultLayout(props) {
@@ -13,9 +13,11 @@ export default function DefaultLayout(props) {
       <Menu.Item>
         <a href="/userbookings">Bookings</a>
       </Menu.Item>
-      <Menu.Item>
-        <a href="/admin">Admin</a>
-      </Menu.Item>
+      {user && user.isAdmin && (
+        <Menu.Item>
+          <a href="/admin">Admin</a>
+        </Menu.Item>
+      )}
       <Menu.Item
         onClick={() => {
           localStorage.removeItem("user");
