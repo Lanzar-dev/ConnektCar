@@ -59,7 +59,7 @@ export default function Register() {
                 { required: true, message: "Please input your password!" },
               ]}
             >
-              <Input />
+              <Input type="password" />
             </Form.Item>
             <Form.Item
               name="cpassword"
@@ -68,7 +68,7 @@ export default function Register() {
                 { required: true, message: "Please input your password!" },
               ]}
             >
-              <Input />
+              <Input type="password" />
             </Form.Item>
 
             <button className="btn1 mt-2 mb-3">Register</button>

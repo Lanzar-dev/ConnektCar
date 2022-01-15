@@ -36,7 +36,7 @@ export default function EditCar() {
       {loading && <Spinner />}
 
       <Row justify="center mt-5">
-        <Col lg={12} sm={24}>
+        <Col lg={12} sm={24} xs={24} className="p-2">
           {totalCars.length && (
             <Form
               initialValues={car}

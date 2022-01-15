@@ -28,14 +28,13 @@ code {
 }
 
 h1 {
-  font-family: 30px;
+  font-size: 30px;
   font-weight: bold;
   color: orangered;
 }
 
 p {
   margin: 5px !important;
-  /* text-align: left; */
   padding: 0;
 }
 
@@ -50,11 +49,16 @@ p {
   border: 1px solid orangered;
   padding: 5px 15px;
   outline: none;
-  width: 100px;
+  /* width: 100px; */
 }
 
 .content {
   min-height: 90vh;
+}
+
+.footer {
+  background-color: aliceblue;
+  padding: 10px;
 }
 
 /* Home */
@@ -65,6 +69,10 @@ p {
   border: 1px solid orangered;
   padding: 5px 15px;
   outline: none;
+}
+
+.bt1:focus {
+  border: none;
 }
 
 .car {
@@ -162,4 +170,8 @@ svg {
   height: 20px;
   width: 20px;
   cursor: pointer;
+}
+
+a {
+  color: orangered !important;
 }

@@ -22,7 +22,7 @@ export default function DefaultLayout(props) {
           window.location.href = "/login";
         }}
       >
-        <li>Logout</li>
+        <li style={{ color: "orangered" }}>Logout</li>
       </Menu.Item>
     </Menu>
   );
@@ -47,6 +47,11 @@ export default function DefaultLayout(props) {
         </Row>
       </div>
       <div className="content">{props.children}</div>
+      <div className="footer text-center">
+        <hr />
+        <p>Developed by</p>
+        <p>TY</p>
+      </div>
     </div>
   );
 }

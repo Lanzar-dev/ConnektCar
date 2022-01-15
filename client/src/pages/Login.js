@@ -56,7 +56,7 @@ export default function Login() {
                 { required: true, message: "Please input your password!" },
               ]}
             >
-              <Input />
+              <Input type="password" />
             </Form.Item>
 
             <button className="btn1 mt-2 mb-3">Login</button>

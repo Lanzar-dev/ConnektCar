@@ -8,6 +8,10 @@ import { getAllCars } from "../redux/actions/carsActions";
 import moment from "moment";
 import { bookCar } from "../redux/actions/bookingActions";
 import StripeCheckout from "react-stripe-checkout";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const { RangePicker } = DatePicker;
 
 export default function BookingCar() {
@@ -48,8 +52,6 @@ export default function BookingCar() {
     setTotalHours(values[1].diff(values[0], "hours"));
   }
 
-  // const bookNow = () => {};
-
   function onToken(token) {
     const reqObj = {
       token,
@@ -74,18 +76,28 @@ export default function BookingCar() {
         className="d-flex align-items-center"
         style={{ minHeight: "90vh" }}
       >
-        <Col lg={10} sm={24} xs={24}>
-          <img src={car.image} alt={car.name} className="carImg2 bs1" />
+        <Col lg={10} sm={24} xs={24} className="p-3">
+          <img
+            src={car.image}
+            alt={car.name}
+            className="carImg2 bs1 w-100"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+          />
         </Col>
-        <Col lg={10} sm={24} xs={24} className="text-right">
-          <Divider>Car Info</Divider>
-          <div>
+        <Col lg={10} sm={24} xs={24} className="text-right p-2">
+          <Divider type="horizontal" dashed>
+            Car Info
+          </Divider>
+          <div style={{ textAlign: "right" }}>
             <p>{car.name}</p>
             <p>${car.rentPerHour} Rent Per Hour</p>
             <p>Fuel Type: {car.fuelType}</p>
             <p>Max Persons: {car.capacity}</p>
           </div>
-          <Divider>Select Time Slots</Divider>
+          <Divider type="horizontal" dashed>
+            Select Time Slots
+          </Divider>
           <RangePicker
             showTime={{ format: "HH:mm" }}
             format="MM DD yyy HH:mm"

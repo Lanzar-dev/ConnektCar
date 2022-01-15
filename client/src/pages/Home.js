@@ -23,8 +23,8 @@ export default function Home() {
   }, [cars]);
 
   function setFilter(values) {
-    let selectedFrom = moment(values[0], "MM DD yyy HH:mm");
-    let selectedTo = moment(values[1], "MM DD yyy HH:mm");
+    let selectedFrom = moment(values[0], "MM DD yyyy HH:mm");
+    let selectedTo = moment(values[1], "MM DD yyyy HH:mm");
 
     let temp = [];
 
@@ -54,7 +54,7 @@ export default function Home() {
         <Col lg={20} sm={24} className="d-flex justify-content-left">
           <RangePicker
             showTime={{ format: "HH:mm" }}
-            format="MM DD yyy HH:mm"
+            format="MM DD yyyy HH:mm"
             onChange={setFilter}
           />
         </Col>
