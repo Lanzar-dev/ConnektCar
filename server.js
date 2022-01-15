@@ -17,17 +17,17 @@ app.use("/api/cars", carRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/bookings", bookingRoutes);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "./client/build")));
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "./client/build")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client", "build", "index.html"));
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.send("Api running");
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "./client", "build", "index.html"));
+//   });
+// } else {
+//   app.get("/", (req, res) => {
+//     res.send("Api running");
+//   });
+// }
 
 const port = process.env.PORT || 5000;
 
