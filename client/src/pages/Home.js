@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import DefaultLayout from "../components/DefaultLayout";
 import { getAllCars } from "../redux/actions/carsActions";
-import { Col, Row, Divider, DatePicker, Checkbox } from "antd";
+import { Col, Row, DatePicker } from "antd";
 import Spinner from "../components/Spinner";
 import { Link } from "react-router-dom";
 import moment from "moment";
@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="car-content d-flex align-items-center justify-content-between">
                   <div className="text-left pl-2">
                     <p>{car.name}</p>
-                    <p>${car.rentPerHour} Rent Per Hour</p>
+                    <p> Rent Per Hour ${car.rentPerHour}</p>
                   </div>
                   <div>
                     <button className="btn1 mr-2">

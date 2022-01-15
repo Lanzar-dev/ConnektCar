@@ -156,3 +156,10 @@ p {
   width: auto;
   border-radius: 10px;
 }
+
+/* Admin Home */
+svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}

@@ -8,6 +8,8 @@ import "antd/dist/antd.css";
 import ProtectedRoute from "./components/ProtectedRoute";
 import UserBookings from "./pages/UserBookings";
 import AddCar from "./pages/AddCar";
+import AdminHome from "./pages/AdminHome";
+import EditCar from "./pages/EditCar";
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           </Route>
           <Route path="/addcar" element={<ProtectedRoute />}>
             <Route path="/addcar" element={<AddCar />} />
+          </Route>
+          <Route path="/editcar/:carId" element={<ProtectedRoute />}>
+            <Route path="/editcar/:carId" element={<EditCar />} />
+          </Route>
+          <Route path="/admin" element={<ProtectedRoute />}>
+            <Route path="/admin" element={<AdminHome />} />
           </Route>
         </Routes>
       </BrowserRouter>

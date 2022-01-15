@@ -19,4 +19,30 @@ const addCar = async (req, res) => {
   }
 };
 
-module.exports = { getAllCars, addCar };
+const editCar = async (req, res) => {
+  try {
+    const car = await Car.findOne({ _id: req.body._id });
+    car.name = req.body.name;
+    car.image = req.body.image;
+    car.fuelType = req.body.fuelType;
+    car.rentPerHour = req.body.rentPerHour;
+    car.capacity = req.body.capacity;
+
+    await car.save();
+    res.send("Car details updated successfully");
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
+
+const deleteCar = async (req, res) => {
+  try {
+    await Car.findOneAndDelete({ _id: req.body.carId });
+
+    res.send("Car deleted successfully");
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
+
+module.exports = { getAllCars, addCar, editCar, deleteCar };
